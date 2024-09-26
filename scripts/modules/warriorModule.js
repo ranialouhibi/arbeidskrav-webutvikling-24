@@ -8,8 +8,10 @@ const warriorModule =  () => {
             name: "Snake",
             price: 200,
             image: "warrior-1.jpg"
+            //hei
         },
         {
+        
             id: 2,  
             title: "Giant",
             price: 500,
