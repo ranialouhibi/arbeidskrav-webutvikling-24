@@ -1,0 +1,47 @@
+/*
+    Do you need a dedicated CSS file per HTML page in addition to main.css?
+*/
+body{
+    background-color: #1F271B;
+    cursor: url("images/axe-cursor.png"), auto;
+    
+    
+}
+.box{
+   color: aliceblue; 
+   border: 1px none rgb(229, 234, 231);
+   border-bottom: 1px solid rgb(229, 234, 231);
+  font-size: xx-large;
+  width: 1450px;
+  margin-left: -10px;
+  margin-top: -50px;
+  height: 100px;
+background-color: rgba(17, 7, 7, 0.361);
+}
+h3{
+    margin-top: 50px;
+    margin-left: 20px;
+    
+
+}
+
+
+.money{
+    display: flex;
+flex-direction: row;
+gap: 200px 80px;
+justify-content: start;
+margin-top: 15px;
+}
+#gold-icon{
+    width: 30px;
+  
+}
+#wood-icon{
+    width: 30px;
+}
+#metal-icon{
+    width: 30px;
+}
+
+

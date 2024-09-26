@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character select</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script type="module" src="scripts/character-select.js"></script>
+    <!--
+        Se på lagring av informasjon i localStorage.
+        localStorage er en lokal database i nettleseren.
+        Metoder: 
+        - localStorage.setItem("key", value)
+        - localStorage.getItem("key")
+        - localStorage.removeItem("key")
+        - localStorage.clear()
+        - JSON.parse()
+        - JSON.stringify()
+
+        Annet: event, event.target
+    -->
+</head>
+<body>
+    
+    <div>
+        
+        <header>
+            <a href="character-select.html">localStorage</a>
+            <nav>
+                <ul>
+                    <li><a href="character-select.html">Side 1 - Character select</a></li>
+                    <li><a href="character-confirmation.html">Side 2 - Character confirmation</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <header>
+                <h3>Side 1 - Character select</h3>
+            </header>
+
+            <section class="character-select-section">
+
+                <div>
+                    <label>Race</label>
+                    <select id="character-select">
+                        <option value="yeti">Yeti</option>
+                        <option value="pig">Pig</option>
+                        <option value="pikatsju">Pikatsju</option>
+                    </select>
+                    
+                    <button id="save-race-btn">Save race</button>
+                    <button id="delete-race-btn">Delete race</button>
+                </div>
+                
+                <div>
+                    <label>Main weapon</label>
+                    <select id="weapon-select">
+                        <option value="hammer">Hammer</option>
+                        <option value="sword">Sword</option>
+                        <option value="bow">Bow</option>
+                    </select>
+                    
+                    <button id="save-weapon-btn">Save weapon</button>
+                    <button id="delete-weapon-btn">Delete weapon</button>
+                </div>            
+
+                <span id=choice-status-p">Ingen status så langt.</span>
+
+            </section>
+
+        </main>
+        
+        <footer>
+            
+        </footer>
+
+    </div>
+    
+</body>
+</html>

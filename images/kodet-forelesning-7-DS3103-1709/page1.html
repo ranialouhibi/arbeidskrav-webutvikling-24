@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1</title>
+    <!-- 
+        Temaet er localStorage.
+        page1.html og page2.html viser hvordan variabler i den ene siden blir tilbakestilt hvis vi går fra side 1 til side 2 og så tilbake til side 1.
+        Man må bruke localStorage (eller sessionStorage) for å ivareta verdier fra den ene siden til den andre        
+    -->
+</head>
+<body>
+
+    <h1>Side 1</h1>
+    <nav>
+        <ul>
+            <li><a href="page1.html">Side 1</a></li>
+            <li><a href="page2.html">Side 2</a></li>
+        </ul>
+    </nav>
+    <button id="test-btn">Antall ganger klikket: 0</button>
+    <script>
+
+        const testBtn = document.querySelector("#test-btn");
+
+        let clicks = 0;
+
+        testBtn.addEventListener("click", () => {
+            clicks++
+            testBtn.innerHTML = `Antall ganger klikket: ${clicks}`;
+            console.log("clicks:", clicks)
+        })
+    </script>
+</body>
+</html>
