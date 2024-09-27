@@ -1,6 +1,7 @@
 const warriorModule =  () => {
 
   
+    //data for alle krigere
     
      const warriors = [
         {
