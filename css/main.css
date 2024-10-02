@@ -2,6 +2,7 @@
 
     main.css is the usual name for a CSS which will be used on all/most pages.
 */
+/*
 body{
  background-color:#1F271B;
 }
@@ -79,7 +80,7 @@ font-family: 'Times New Roman', Times, serif;
     height: 10px;
 }
 
-/*Nødvendig med egne warrior id? Endre størrelse */
+/*Nødvendig med egne warrior id? Endre størrelse 
 .warrior-1{   
     border: 2px solid rgb(124, 36, 36);
     box-shadow: 2px 3px 2px rgb(23, 21, 21);
@@ -160,7 +161,7 @@ font-family: 'Times New Roman', Times, serif;
 
 
 
-/* page 3 */
+/* page 3 *//*
 h1{
     margin: 50px;
     color: white;
@@ -175,4 +176,114 @@ grid-template-columns: repeat(12, 1fr);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 
+}
+*/
+
+body {
+    background-color: #1F271B;
+}
+
+.box {
+    color: aliceblue; 
+    border: 1px none rgb(229, 234, 231);
+    border-bottom: 1px solid rgb(229, 234, 231);
+    font-size: xx-large;
+    width: 1450px;
+    margin-left: -10px;
+    margin-top: -50px;
+    height: 100px;
+    background-color: rgba(17, 7, 7, 0.361);
+}
+
+h3 {
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.money {
+    display: flex;
+    flex-direction: row;
+    gap: 200px 80px;
+    justify-content: start;
+    margin-top: 15px;
+}
+
+#gold-icon, #wood-icon, #metal-icon {
+    width: 30px;
+}
+
+#warrior-txt {
+    margin-top: 80px;
+    margin-left: 150px;
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.warrior-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px 100px;
+    margin-left: 150px;
+    margin-bottom: 300px;
+    column-gap: 50px;
+    margin-top: -20px;
+    color: white;
+}
+
+.product-box {
+    border: 5px solid rgb(189, 56, 56);
+    box-shadow: 2px 3px 2px rgb(22, 22, 27);
+    width: 200px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.product-box img {
+    width: 200px;
+    height: 400px;
+}
+
+#button {
+    padding: 5px;
+    width: 200px;
+    margin-top: 5px;
+    background-color: rgb(189, 56, 56);
+    color: white;
+}
+.buy-button {
+    padding: 10px 30px;
+    margin-top: -50px;
+    margin-left: 60px;
+    background-color: rgb(189, 56, 56);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+h3{
+    margin-top: 1px;
+    margin-left: 75px;
+}
+
+.buy-button:hover {
+    background-color: rgb(150, 45, 45);
+   
+}
+
+
+#button img {
+    width: 10px;
+    height: 10px;
+}
+
+h1 {
+    margin: 50px;
+    color: white;
+}
+
+.your-warriors, .your-weapons {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
 }

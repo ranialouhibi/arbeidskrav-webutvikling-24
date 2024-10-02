@@ -1,4 +1,4 @@
-const warriorModule =  () => {
+/*const warriorModule =  () => {
 
   
     //data for alle krigere
@@ -54,5 +54,56 @@ const warriorModule =  () => {
         getWarriors
     }
 }
+
+export default warriorModule;
+*/
+const warriorModule = () => {
+    const warriors = [
+        {
+            id: 1,  
+            name: "Snake",
+            price: 200,
+            image: "warrior-1.jpg"
+        },
+        {
+            id: 2,  
+            name: "Giant",
+            price: 500,
+            image: "warrior-2.jpg"
+        },
+        {
+            id: 3,  
+            name: "Big Axe",
+            price: 150,
+            image: "warrior-3.jpg"
+        },
+        {
+            id: 4,
+            name: "Thief",
+            price: 50,
+            image: "warrior-4.jpg"
+        },
+        {  
+            id: 5,
+            name: "Tanks",
+            price: 250,
+            image: "warrior-5.jpg"
+        },    
+        {
+            id: 6,
+            name: "Berseker",
+            price: 275,
+            image: "warrior-6.jpg"
+        }
+    ];
+
+    const getWarriors = () => {
+        return structuredClone(warriors);
+    };
+
+    return {
+        getWarriors
+    };
+};
 
 export default warriorModule;
