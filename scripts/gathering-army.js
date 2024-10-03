@@ -54,8 +54,14 @@ weapons.forEach(weapons => {
 weaponDisplay.innerHTML = htmlTxt;
 }
 
+
+
 displayWarriors();
 displayWeapons();
 
+
+document.getElementById('go-to-army').addEventListener('click', () => {
+    window.location.href = 'your-army.html';
+})
 
 
