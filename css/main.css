@@ -180,7 +180,7 @@ grid-template-columns: repeat(12, 1fr);
 */
 
 body {
-    background-color: #1F271B;
+    background-color: #2c3229;
 }
 
 .box {
@@ -240,6 +240,7 @@ h3 {
     object-fit: cover;
 }
 
+
 .product-box img {
     width: 200px;
     height: 400px;
@@ -286,4 +287,22 @@ h1 {
 .your-warriors, .your-weapons {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+}
+
+.product-box2 {
+    border: 5px solid rgb(246, 241, 241);
+    box-shadow: 2px 3px 2px rgb(22, 22, 27);
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+.product-box2 img {
+    width: 400px;
+    height: 400px;
+}
+.weapon-display{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px 70px;
+    margin-top: -100px;
 }

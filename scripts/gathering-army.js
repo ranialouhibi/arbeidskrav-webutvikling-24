@@ -1,29 +1,3 @@
-/*import warriorModule from "./modules/warriorModule.js"
-const warriorDisplay = document.querySelector("#warriordisplay"); // i parantesen til querySelector legger vi inn CSS-velgere slik vi ville gjort i CSS-kode
-
-
-//this code will display the warriors to the page and make them clickable to be added to the army;
-
-
-const warriors = warriorModule().getWarriors();
-
-const displayWarriors = () => {
-    let htmlTxt = "";
-
-    warriors.forEach(warrior => {
-        htmlTxt += `
-        <article class="product-box col-xs-12 col-sm-6">
-        <h3>${warrior.name}</h3>
-        <img src="images/warriors/${warrior.image}">
-    </article>  
-        `;
-    }); 
-}//forEach
-    warriorDisplay.innerHTML = htmlTxt; 
-
-    displayWarriors();
-
-*/
 import warriorModule from "./modules/warriorModule.js";
 
 const warriorDisplay = document.querySelector(".warrior-display");
@@ -45,7 +19,7 @@ const displayWarriors = () => {
 
     warriorDisplay.innerHTML = htmlTxt; 
 
-    // Legg til event listeners på knappene
+
     document.querySelectorAll(".buy-button").forEach(button => {
         button.addEventListener("click", (event) => {
             const warriorId = event.target.getAttribute("data-id");
@@ -62,4 +36,26 @@ const buyWarrior = (id) => {
     alert(`${warrior.name} er lagt til i din hær!`);
 };
 
+import WeaponModule from "./modules/WeaponModule.js";
+const weaponDisplay = document.querySelector(".weapon-display");
+const weapons = WeaponModule().getWeapons();
+
+const displayWeapons = () => {
+    let htmlTxt = "";
+weapons.forEach(weapons => {
+    htmlTxt += `
+    <article class="product-box2">
+        <h3>${weapons.name}</h3>
+        <img src="images/${weapons.image}" alt="${weapons.name}">
+        <button class="buy-button" data-id="${weapons.id}">Kjøp</button>
+    </article>  
+    `;
+});
+weaponDisplay.innerHTML = htmlTxt;
+}
+
 displayWarriors();
+displayWeapons();
+
+
+
