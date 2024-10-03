@@ -161,23 +161,8 @@ font-family: 'Times New Roman', Times, serif;
 
 
 
-/* page 3 *//*
-h1{
-    margin: 50px;
-    color: white;
-}
-
-.your-warriors{
-display: grid;
-grid-template-columns: repeat(12, 1fr);
-
-}
-.your-weapons{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-
-}
 */
+
 
 body {
     background-color: #2c3229;
@@ -273,7 +258,6 @@ h3{
    
 }
 
-
 #button img {
     width: 10px;
     height: 10px;
@@ -282,11 +266,6 @@ h3{
 h1 {
     margin: 50px;
     color: white;
-}
-
-.your-warriors, .your-weapons {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
 }
 
 .product-box2 {
@@ -300,9 +279,37 @@ h1 {
     width: 400px;
     height: 400px;
 }
+#weapon-txt{
+    margin-top: -100px;
+    margin-left: 150px;
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+
+}
 .weapon-display{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 50px 70px;
-    margin-top: -100px;
+    gap: 100px 50px;
+    margin-top: 10px;
+}
+
+
+/*Page 3 */
+h1{
+    margin: 50px;
+    color: white;
+}
+
+.your-warriors{
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+
+
+}
+.your-weapons{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
 }
