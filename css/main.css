@@ -307,29 +307,6 @@ Your-army page
     color: white;
 }
 
-
-
-.main-coin{
-    width: 45px;
-    margin-bottom: 0;
-    margin-top: 70px;
-    margin-left: 260px; 
-}
-
-.main-metal{
-    width: 45px;
-    margin-bottom: 0;
-    margin-top: 70px;
-    margin-left: 370px; 
-}
-
-.main-wood{
-    width: 45px;
-    margin-bottom: 0;
-    margin-top: 70px;
-    margin-left: 370px; 
-}
-
 .website{
     color: white;
     font-size: 17px;
@@ -350,6 +327,12 @@ Your-army page
 }
 
 
+.link-txt{
+    color: white;
+}
+
 .under-txt{
     color: white;
+    margin-left: 0;
+    margin-top: 50px;
 }
