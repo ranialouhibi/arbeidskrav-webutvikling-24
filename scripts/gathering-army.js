@@ -54,6 +54,8 @@ weapons.forEach(weapons => {
 weaponDisplay.innerHTML = htmlTxt;
 }
 
+
+
 document.querySelectorAll(".buy-button2").forEach(button => {
     button.addEventListener("click", (event) => {
         const weaponId = event.target .getAttribute("data-id");
@@ -73,5 +75,9 @@ const buyWeapon = (id) => {
 displayWarriors();
 displayWeapons();
 
+
+document.getElementById('go-to-army').addEventListener('click', () => {
+    window.location.href = 'your-army.html';
+})
 
 
