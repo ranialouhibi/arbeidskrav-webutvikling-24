@@ -56,6 +56,22 @@ weaponDisplay.innerHTML = htmlTxt;
 
 
 
+document.querySelectorAll(".buy-button2").forEach(button => {
+    button.addEventListener("click", (event) => {
+        const weaponId = event.target .getAttribute("data-id");
+        buyWeapon(weaponId);
+    });
+});
+
+const buyWeapon = (id) => {
+    const weapon = weapon.find(weapon => weapon.id == id);
+    let purchasedWeapon = JSON.parse(localStorage.getItem("purchasedWeapon")) || [];
+    purchasedWeapon.push(weapon);
+    localStorage.setItem("purchasedWeapon", JSON.stringify(purchasedWeapon));
+    alert(`${weapon.name} er lagt til i din hær!`);
+};
+
+
 displayWarriors();
 displayWeapons();
 
