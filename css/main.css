@@ -291,30 +291,6 @@ h1 {
 .weapon-display{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-<<<<<<< Updated upstream
-    gap: 100px 50px;
-    margin-top: 10px;
-}
-
-
-/*Page 3 */
-h1{
-    margin: 50px;
-    color: white;
-}
-
-.your-warriors{
-display: grid;
-grid-template-columns: repeat(12, 1fr);
-
-
-}
-.your-weapons{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-
-}
-=======
     gap: 50px 70px;
     margin-top: -100px;
 }
@@ -372,4 +348,3 @@ Your-army page
 .army-page{
     margin-left: 60px;
 }
->>>>>>> Stashed changes
